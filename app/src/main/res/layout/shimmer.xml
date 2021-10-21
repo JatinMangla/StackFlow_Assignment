@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/grey"
+            android:id="@+id/image"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@color/grey"
+                android:hint="NAme"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_alignParentEnd="true"
+                android:background="@color/grey"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:background="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/name"
+                android:hint="title" />
+            <TextView
+                android:id="@+id/extra1"
+                android:background="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="java"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/extra2"
+                android:background="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_toRightOf="@+id/extra1"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:id="@+id/extra3"
+                android:background="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_toRightOf="@+id/extra2"
+                android:layout_marginLeft="30dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
